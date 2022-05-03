@@ -6,23 +6,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.testng.annotations.Test;
 
 
 
 
-@Test public class AdminLogin {
-	
+ public class AdminLogin {
+
 	WebDriver driver;
 	
 	public WebDriver Login() {
 		
-		
+	
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\97798\\eclipse-workspace\\ASBA\\Drivers\\chromedriver.exe");
 	    
 	    System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
 	    driver = new ChromeDriver();
-		
+ 		
 		//go to asba site
 		
 				driver.get("http://10.13.194.204/");
